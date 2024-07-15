@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Botón para abrir el chat */
+.chat-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Imagen del botón del chat */
+.chat-button-container img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+/* Contenedor del chat emergente */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 400px;
+    height: 430px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 1001;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+/* Contenedor del chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Encabezado del chat */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+
+.header-title {
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.header-close-button {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Historial del chat */
+.chat-history {
+    flex: 1;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    overflow-y: auto; /* Desplazamiento vertical */
+}
+
+/* Mensajes del asistente */
+.message.assistant {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Avatar del asistente */
+.message .avatar {
+    margin-right: 10px;
+}
+
+/* Imagen del avatar del asistente */
+.message .avatar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Texto del mensaje del asistente */
+.message .text {
+    background-color: #e1f5fe;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #b3e5fc;
+    max-width: 80%;
+}
+
+/* Mensajes del usuario */
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.bot-message {
+    background-color: #abe0c7;
+    color: black;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #ffdf7e;
+    color: black;
+    align-self: flex-end;
+}
+
+/* Estilo para botones adicionales */
+.additional-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+/* Estilo base para los botones */
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.8; /* Opacidad en hover */
+}
+
+/* Botones específicos */
+.btn-politicas {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-info {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-asesor {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Área de entrada del chat */
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mensajes de políticas e información del usuario */
+.chat-message.user-message-politicas,
+.chat-message.user-message-informacion {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+.chat-message.user-message-politicas h5,
+.chat-message.user-message-informacion h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.chat-message.user-message-politicas ul,
+.chat-message.user-message-informacion p {
+    margin: 0;
+}
+
+.chat-message.user-message-politicas ul {
+    padding-left: 20px;
+}
+
+.chat-message.user-message-politicas li {
+    margin-bottom: 5px;
+}
