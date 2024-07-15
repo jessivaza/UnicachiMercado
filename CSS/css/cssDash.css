@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #1abc9c;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #16a085;
+}
+
+/* Estilos del contenido */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #1abc9c;
+    font-size: 36px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #333;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 10px;
+}
+
+/* Estilos de las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos de los botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.button.primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.button.primary:hover {
+    background-color: #2980b9;
+}
+
+.button.warning {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.button.warning:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos específicos para los botones de editar y eliminar */
+.editar-btn {
+    background-color: #f1c40f;
+    color: #333;
+}
+
+.editar-btn:hover {
+    background-color: #f7ca18;
+}
+
+.eliminar-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.eliminar-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para los botones de exportar */
+.custom-excel-button {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.custom-excel-button:hover {
+    background-color: #27ae60;
+}
+.stats-container {
+    display: flex;
+}
+
+.stats-box {
+    margin-right: 10px; /* Espacio entre las cajas */
+}

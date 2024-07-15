@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Puesto" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="e9bb1a27-f975-4aa4-98f9-75524c5daafa">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[YmRfdW5pY2FjaGkucHVlc3RvaW5mb3JtZSBBUyAsMTA4LDEyLDM0MWRhMzhhLTFhYTYtNDc3MC04
+OTFmLTI0YjNmZmE2NjM5YTs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Puestos"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `idPuestoInforme`,
+	`productoPuestoInforme`,
+	`categoriaPuestoInforme`,
+	`clientePuestoInforme`,
+	`duenoPuestoInforme`,
+	`estadoPuestoInforme`
+FROM bd_unicachi.puestoinforme]]>
+	</queryString>
+	<field name="idPuestoInforme" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.label" value="idPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="puestoinforme"/>
+	</field>
+	<field name="productoPuestoInforme" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="productoPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.label" value="productoPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="puestoinforme"/>
+	</field>
+	<field name="categoriaPuestoInforme" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="categoriaPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.label" value="categoriaPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="puestoinforme"/>
+	</field>
+	<field name="clientePuestoInforme" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="clientePuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.label" value="clientePuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="puestoinforme"/>
+	</field>
+	<field name="duenoPuestoInforme" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="duenoPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.label" value="duenoPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="puestoinforme"/>
+	</field>
+	<field name="estadoPuestoInforme" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estadoPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.label" value="estadoPuestoInforme"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="puestoinforme"/>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{idPuestoInforme}]]></groupExpression>
+		<groupHeader>
+			<band height="67">
+				<textField>
+					<reportElement style="SubTitle" x="15" y="5" width="40" height="24" forecolor="#000000" uuid="91d5865d-2791-4d53-8ab5-f5bedeea756b"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{idPuestoInforme}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="60" y="7" width="103" height="20" uuid="4abefbae-0e28-4a03-a7e7-7b8c42708a17"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{productoPuestoInforme}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="168" y="8" width="103" height="20" uuid="f9963d23-fe37-4078-9b35-8780a39ca703"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{categoriaPuestoInforme}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="277" y="9" width="103" height="20" uuid="9ba73858-5593-4c40-b314-e189497452d8"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{clientePuestoInforme}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="370" y="8" width="103" height="20" uuid="c413f4bc-3e3e-4300-a4fa-be3f1feba8f2"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{duenoPuestoInforme}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="470" y="14" width="103" height="20" uuid="1c417714-d779-4fca-98be-c53ab292bc8a"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{estadoPuestoInforme}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Opaque" x="-10" y="9" width="20" height="17" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="a2176168-e2d8-4c9e-99e3-184a5f409dd7"/>
+				</rectangle>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="0" y="40" width="555" height="1" uuid="b255b086-db17-4707-b216-e4f5f27df2d3"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#999999"/>
+					</graphicElement>
+				</line>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{productoPuestoInforme}]]></groupExpression>
+	</group>
+	<group name="categoriaPuestoInforme">
+		<groupExpression><![CDATA[$F{categoriaPuestoInforme}]]></groupExpression>
+	</group>
+	<group name="clientePuestoInforme">
+		<groupExpression><![CDATA[$F{clientePuestoInforme}]]></groupExpression>
+	</group>
+	<group name="duenoPuestoInforme">
+		<groupExpression><![CDATA[$F{duenoPuestoInforme}]]></groupExpression>
+	</group>
+	<group name="estadoPuestoInforme">
+		<groupExpression><![CDATA[$F{estadoPuestoInforme}]]></groupExpression>
+	</group>
+	<background>
+		<band height="48" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="293" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="5b1b18cd-cef2-494b-bff0-8ac9010b5d1a"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Mercado Unicachi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="69" y="50" width="194" height="22" uuid="213eb0b4-0a68-4bdd-9a8c-14ad31fe2fec"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[LISTA DE PUESTOS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="290" y="6" width="245" height="64" uuid="b405e101-b217-4e2b-a2cc-549dd3b7091d"/>
+				<imageExpression><![CDATA["C:/Users/Usuario/Documents/mavenproject1/src/main/webapp/Documentos/logo1.png"]]></imageExpression>
+			</image>
+			<stackedBar3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="20" y="90" width="493" height="190" uuid="de7f01e5-253f-48a1-bbfe-2102febd7ae1"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{idPuestoInforme}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{estadoPuestoInforme}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{idPuestoInforme}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</stackedBar3DChart>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch"/>
+	</columnHeader>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

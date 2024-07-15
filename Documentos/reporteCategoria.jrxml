@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="categoria" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a1f690a3-5977-4467-85f8-6b0bcd5b7210">
+    <property name="ireport.zoom" value="1.0"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="0"/>
+    <property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[dW5pY2FjaGkuY2F0ZWdvcmlhIEFTICw2OSwxMCw0M2YwNzIyYy1iZTRiLTRjYjAtYjZmNC05M2Jj
+YjEyMTdjMmE7]]>
+    </property>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="categorias"/>
+    <style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+    <style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+    <style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+    <style name="Detail" fontName="Arial" fontSize="12"/>
+    <queryString language="SQL">
+		<![CDATA[SELECT `idCategoria`,
+	`nombreCategoria`,
+	descripcion,
+	`cantidadProductos`,
+	`precioPromedio`,
+	popularidad
+FROM unicachi.categoria]]>
+    </queryString>
+    <field name="idCategoria" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.name" value="idCategoria"/>
+        <property name="com.jaspersoft.studio.field.label" value="idCategoria"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="categoria"/>
+    </field>
+    <field name="nombreCategoria" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="nombreCategoria"/>
+        <property name="com.jaspersoft.studio.field.label" value="nombreCategoria"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="categoria"/>
+    </field>
+    <field name="descripcion" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="descripcion"/>
+        <property name="com.jaspersoft.studio.field.label" value="descripcion"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="categoria"/>
+    </field>
+    <field name="cantidadProductos" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.name" value="cantidadProductos"/>
+        <property name="com.jaspersoft.studio.field.label" value="cantidadProductos"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="categoria"/>
+    </field>
+    <field name="precioPromedio" class="java.lang.Double">
+        <property name="com.jaspersoft.studio.field.name" value="precioPromedio"/>
+        <property name="com.jaspersoft.studio.field.label" value="precioPromedio"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="categoria"/>
+    </field>
+    <field name="popularidad" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="popularidad"/>
+        <property name="com.jaspersoft.studio.field.label" value="popularidad"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="categoria"/>
+    </field>
+   <group name="Group1">
+		<groupExpression><![CDATA[$F{idCategoria}]]></groupExpression>
+		<groupHeader>
+			<band height="48">
+				<textField>
+					<reportElement style="SubTitle" x="24" y="14" width="80" height="19" forecolor="#000000" uuid="58dcc1c6-1d3b-42b1-ab28-0ec976da8319"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{idCategoria}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="13" width="20" height="20" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="975a4f60-ff14-457c-9bb7-6fc526761c2a"/>
+				</rectangle>
+				<textField>
+					<reportElement style="SubTitle" x="106" y="14" width="113" height="20" uuid="cf9c2b3c-6127-4496-8523-a6d7c35267b5"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nombreCategoria}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="222" y="14" width="110" height="20" uuid="c3f9c2f9-accc-41d8-901e-6d8c7dba2fd5"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="332" y="14" width="70" height="19" uuid="1a3f097a-111e-479c-8be9-c3d41cdff65f"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{cantidadProductos}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="402" y="15" width="70" height="19" uuid="ebc94166-30e2-49af-bd89-926fa4da9264"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{precioPromedio}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="SubTitle" x="472" y="15" width="70" height="19" uuid="21a493b9-7f5b-48d1-9366-f9094daa9526"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{popularidad}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{nombreCategoria}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="descripcion">
+		<groupExpression><![CDATA[$F{descripcion}]]></groupExpression>
+	</group>
+	<group name="cantidadProductos">
+		<groupExpression><![CDATA[$F{cantidadProductos}]]></groupExpression>
+	</group>
+	<group name="precioPromedio">
+		<groupExpression><![CDATA[$F{precioPromedio}]]></groupExpression>
+	</group>
+	<group name="popularidad">
+		<groupExpression><![CDATA[$F{popularidad}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="287" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="363fa2ad-70fc-43cb-9062-e6c62c7f48fc"/>
+				<imageExpression><![CDATA["C:/Users/Usuario/Documents/mavenproject1/src/main/webapp/Documentos/logo1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="6f9c1004-6140-4588-9c4f-d75824835765"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Mercado Unicachi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="30" y="46" width="245" height="22" uuid="8e16dabd-2e54-471b-9652-83e1d55379ec"/>
+				<text><![CDATA[LISTA DE CATEGORIAS]]></text>
+			</staticText>
+			<stackedBar3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="10" y="80" width="520" height="200" uuid="48bcd766-8f04-4e17-9357-ab79cfd85943"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{nombreCategoria}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{precioPromedio}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{cantidadProductos}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</stackedBar3DChart>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="544e89f7-0fd1-4142-aa23-e335e3be7007"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="cb229859-ab9a-4aa3-afa2-84439642f4ee"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="deb23d85-47bb-4de6-978e-113ff117188c"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="c6ce76ba-6e11-41e2-9415-72dc2eff001b"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="5a79d2a0-bcde-4ad5-adf0-c4eb2066f6dd"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

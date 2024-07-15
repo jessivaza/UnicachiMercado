@@ -1,0 +1,207 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Estilos para la imagen */
+.card-img-top {
+    width: 40%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para que se adapte al contenedor */
+}
+
+/* Estilos para la tarjeta del producto */
+.product-card {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilos para el nombre del producto */
+.card-body p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.card-body .fw-bold {
+    font-weight: bold;
+}
+
+/* Estilos para el precio */
+.price {
+    font-size: 1.2rem;
+    color: #dc3545;
+}
+
+/* Estilos para el botón de agregar al carrito */
+button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.producto {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Añadir borde */
+    border-radius: 10px; /* Añadir bordes redondeados */
+    padding: 20px; /* Añadir espacio interno */
+    width: 250px; /* Ajustar el ancho del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+}
+
+.descuento {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%; /* Aplica la forma de círculo */
+}
+
+/*Precio Online este en rojo*/
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Alinea los productos a la derecha */
+    padding: 20px;
+    margin-top: -500px; /* Ajusta el margen superior */
+}
+
+
+.producto {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Añadir borde */
+    border-radius: 10px; /* Añadir bordes redondeados */
+    padding: 20px; /* Añadir espacio interno */
+    width: 250px; /* Ajustar el ancho del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+}
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    justify-content: flex-end; /* Cambiado de center a flex-end */
+}
+.descuento {
+    position: absolute;
+    top: 40px;
+    right: auto;
+    left: 10px; /* Establecemos la posición desde la izquierda */
+    background-color: red;
+    color: white;
+    padding: 8px; /* Reducir el padding para hacer el círculo más pequeño */
+    font-size: 12px; /* Reducir el tamaño de la fuente para hacer el círculo más pequeño */
+    border-radius: 50%;
+    transform: translate(50%, -50%); /* Centra el círculo */
+}
+/*centrar el boton*/
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    max-width: 200px; /* Ajusta el ancho máximo según tus necesidades */
+    max-height: 250px; /* Ajusta el alto máximo según tus necesidades */
+}
+
+.price2 {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Tamaño de letra para el precio online */
+}
+
+.price {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Tamaño de letra para el precio regular */
+}
+
+.regular-price {
+    text-decoration: line-through; /* Aplica un efecto de tachado */
+    font-style: italic; /* Aplica un estilo de fuente cursiva */
+    color: #888; /* Cambia el color del texto a gris, opcional */
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
